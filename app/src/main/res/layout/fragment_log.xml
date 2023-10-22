@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layoutlogin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/white"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/judullogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lg"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins_bold"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:paddingTop="40dp" />
+
+            <LinearLayout
+                android:id="@+id/datalogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judullogin"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:padding="25dp">
+
+                <EditText
+                    android:id="@+id/inputuname"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/button"
+                    android:hint="@string/uname"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    android:paddingStart="40dp"
+                    android:textColorHint="@color/darkgrey"
+                    android:inputType="textPersonName"/>
+
+                <EditText
+                    android:id="@+id/editpw"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button"
+                    android:hint="@string/pw"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:padding="10dp"
+                    android:paddingStart="40dp"
+                    android:textColorHint="@color/darkgrey"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+
+            <CheckBox
+                android:id="@+id/ceklis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/baseline_check_box_outline_blank_24"
+                android:layout_below="@+id/datalogin"
+                android:layout_marginStart="25dp"/>
+            <TextView
+                android:id="@+id/viewrmbr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datalogin"
+                android:text="@string/rmbr"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppinsregular"
+                android:textColor="@color/black"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="68dp"
+                android:layout_alignBaseline="@+id/ceklis"/>
+
+            <TextView
+                android:id="@+id/forgetpw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/datalogin"
+                android:text="@string/frgt"
+                android:textColor="@color/medblue"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="33dp"
+                android:layout_alignBaseline="@+id/viewrmbr"/>
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="340dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/forgetpw"
+                android:text="@string/lg"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/medblue"
+                android:layout_marginTop="80dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/btnlogin"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nw"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppinsregular"
+                    />
+
+                <TextView
+                    android:id="@+id/klikregis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reg"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="16sp"
+                    android:textColor="@color/medblue"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

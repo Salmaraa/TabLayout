@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegFragment"
+    android:id="@+id/fragment_container">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layoutregis"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/judulregis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reg"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/black"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:paddingTop="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/dataregis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/judulregis"
+                    android:orientation="vertical"
+                    android:padding="23dp">
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:background="@drawable/button"
+                        android:fontFamily="@font/poppins_medium"
+                        android:hint="@string/uname"
+                        android:padding="10dp"
+                        android:paddingStart="40dp"
+                        android:layout_marginTop="25dp"
+                        android:textSize="18sp"
+                        android:textColorHint="@color/darkgrey"
+                        android:inputType="textPersonName"/>
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/button"
+                        android:fontFamily="@font/poppinsregular"
+                        android:hint="@string/mail"
+                        android:padding="10dp"
+                        android:paddingStart="40dp"
+                        android:textSize="18sp"
+                        android:textColorHint="@color/darkgrey"
+                        android:inputType="textEmailAddress"/>
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/button"
+                        android:fontFamily="@font/poppinsregular"
+                        android:hint="@string/phn"
+                        android:padding="10dp"
+                        android:paddingStart="40dp"
+                        android:textSize="18sp"
+                        android:textColorHint="@color/darkgrey"
+                        android:inputType="number"/>
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/button"
+                        android:fontFamily="@font/poppinsregular"
+                        android:hint="@string/pw"
+                        android:padding="10dp"
+                        android:paddingStart="40dp"
+                        android:textSize="18sp"
+                        android:textColorHint="@color/darkgrey"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+
+
+                <CheckBox
+                    android:id="@+id/ceklis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/baseline_check_box_outline_blank_24"
+                    android:layout_below="@+id/dataregis"
+                    android:layout_marginStart="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dataregis"
+                    android:layout_alignBaseline="@+id/ceklis"
+                    android:layout_marginStart="68dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:text="@string/cek"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btregister"
+                android:layout_width="350dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/layoutregis"
+                android:text="@string/reg"
+                android:layout_centerHorizontal="true"
+                android:width="300dp"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppinsregular"
+                android:backgroundTint="@color/medblue"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/btregister"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alrdy"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/lgn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lg"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textSize="14sp"
+                    android:textColor="@color/medblue"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</FrameLayout>

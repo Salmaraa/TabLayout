@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TabLayout</string>
+    <string name="wel">Welcome</string>
+    <string name="uname">Username</string>
+    <string name="mail">Email</string>
+    <string name="phn">Phone</string>
+    <string name="pw">Password</string>
+    <string name="reg">Register</string>
+    <string name="lg">Login</string>
+    <string name="rmbr">Remember me</string>
+    <string name="frgt">Forget password</string>
+    <string name="nw">New member?</string>
+    <string name="cek">By checking the box you agree to our Terms and Conditions.</string>
+    <string name="alrdy">Already have an account?</string>
+    <string name="hm">Home</string>
+    <string name="deskrip">deskrip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
